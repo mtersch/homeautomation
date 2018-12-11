@@ -1,6 +1,14 @@
 package nl.saxion.mbi12.examples.oop1819.week4.homeautomation.model;
 
 public class PhilipsHUELightbulb extends DimmableLightbulb {
+    private int[] colorValues;
+
+    public PhilipsHUELightbulb() {
+        super();
+        colorValues = new int[3];
+        colorValues[0] = colorValues[1] = colorValues[2] = 255;
+    }
+
     /**
      * Set the color of this HUE bulb to a color specified as red/green/blue combination
      * @param red Value for red component of light (value in range 0-255)
