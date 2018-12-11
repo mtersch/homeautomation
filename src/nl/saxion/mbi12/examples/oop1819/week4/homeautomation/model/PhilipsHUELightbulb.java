@@ -20,4 +20,13 @@ public class PhilipsHUELightbulb extends DimmableLightbulb {
         colorValues[1] = green;
         colorValues[2] = blue;
     }
+
+    @Override
+    public String toString() {
+        if (isOn) {
+            return super.toString() + " and color (" + colorValues[0] + ", " + colorValues[1] + ", " + colorValues[2] + ")";
+        } else {
+            return super.toString();
+        }
+    }
 }
