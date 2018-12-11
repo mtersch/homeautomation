@@ -2,6 +2,11 @@ package nl.saxion.mbi12.examples.oop1819.week4.homeautomation;
 
 import nl.saxion.mbi12.examples.oop1819.week4.homeautomation.model.*;
 
+/**
+ * Home Automation Application
+ * @author Martijn ter Schegget - Saxion Hogescholen
+ * @version 1.0
+ */
 public class Apl {
     public static void main(String[] args) {
         //Create lights
