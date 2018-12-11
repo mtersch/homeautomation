@@ -13,6 +13,9 @@ public class DimmableLightbulb extends Lightbulb {
      * @param percentage Brightness percentage to set (value in range 0-100)
      */
     public void setBrightness(int percentage) {
-        this.percentage = percentage;
+        if (percentage >= 0 && percentage <= 100)
+            this.percentage = percentage;
+        else
+            System.err.println("Invalid percentage " + percentage);
     }
 }

@@ -16,8 +16,11 @@ public class PhilipsHUELightbulb extends DimmableLightbulb {
      * @param blue Value for blue component of light (value in range 0-255)
      */
     public void setColor(int red, int green, int blue) {
-        colorValues[0] = red;
-        colorValues[1] = green;
-        colorValues[2] = blue;
+        if (red >= 0 && red <= 255 && green >= 0 && green <= 255 && blue >= 0 && blue <= 255) {
+            colorValues[0] = red;
+            colorValues[1] = green;
+            colorValues[2] = blue;
+        } else
+            System.err.println("Invalid color values (" + red + ", " + green + ", " + blue + ")");
     }
 }
