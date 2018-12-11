@@ -1,5 +1,9 @@
 package nl.saxion.mbi12.examples.oop1819.week4.homeautomation;
 
+import nl.saxion.mbi12.examples.oop1819.week4.homeautomation.model.DimmableLightbulb;
+import nl.saxion.mbi12.examples.oop1819.week4.homeautomation.model.Lightbulb;
+import nl.saxion.mbi12.examples.oop1819.week4.homeautomation.model.PhilipsHUELightbulb;
+
 public class Apl {
     public static void main(String[] args) {
         //Create lights
