@@ -18,4 +18,13 @@ public class DimmableLightbulb extends Lightbulb {
         else
             System.err.println("Invalid percentage " + percentage);
     }
+
+    @Override
+    public String toString() {
+        if (isOn) {
+            return super.toString() + ", with brightness " + percentage;
+        } else {
+            return super.toString();
+        }
+    }
 }

@@ -23,4 +23,13 @@ public class PhilipsHUELightbulb extends DimmableLightbulb {
         } else
             System.err.println("Invalid color values (" + red + ", " + green + ", " + blue + ")");
     }
+
+    @Override
+    public String toString() {
+        if (isOn) {
+            return super.toString() + " and color (" + colorValues[0] + ", " + colorValues[1] + ", " + colorValues[2] + ")";
+        } else {
+            return super.toString();
+        }
+    }
 }

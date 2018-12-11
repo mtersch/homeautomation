@@ -1,7 +1,7 @@
 package nl.saxion.mbi12.examples.oop1819.week4.homeautomation.model;
 
 public class Lightbulb {
-    private boolean isOn;
+    protected boolean isOn;
 
     public Lightbulb() {
         this.isOn = false;
@@ -12,5 +12,10 @@ public class Lightbulb {
      */
     public void turnOn() {
         isOn = true;
+    }
+
+    @Override
+    public String toString() {
+        return isOn ? "on" : "off";
     }
 }
