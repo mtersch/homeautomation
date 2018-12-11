@@ -4,10 +4,7 @@ public class Lightbulb {
     private boolean isOn;
 
     public Lightbulb() {
-        this(false);
-    }
-    public Lightbulb(boolean isOn) {
-        this.isOn = isOn;
+        this.isOn = false;
     }
 
     /**
