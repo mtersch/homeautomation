@@ -13,4 +13,9 @@ public class Lightbulb {
     public void turnOn() {
         isOn = true;
     }
+
+    @Override
+    public String toString() {
+        return isOn ? "on" : "off";
+    }
 }
